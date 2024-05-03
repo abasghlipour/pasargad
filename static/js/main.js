@@ -1,13 +1,4 @@
-window.oncontextmenu = function () {
-    return !1
-}, jQuery(document).ready(function (e) {
-    document.onkeypress = function (e) {
-        if (123 == (e = e || window.event).keyCode) return !1
-    }, e(document).keydown(function (e) {
-        var n = String.fromCharCode(e.keyCode).toLowerCase();
-        return !e.ctrlKey || "c" != n && "u" != n ? "{" == n ? (alert("Sorry, This Functionality Has Been Disabled!"), !1) : void 0 : (alert("Sorry, This Functionality Has Been Disabled!"), !1)
-    })
-});
+
 
 function ecCreateCookie(e, t, o) {
     var s = new Date;
