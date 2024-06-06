@@ -20,7 +20,7 @@ class User(AbstractUser):
     objects = UserManager()
 
     USERNAME_FIELD = 'phone_number'
-    REQUIRED_FIELDS = ['email', 'name']
+    REQUIRED_FIELDS = ['email', 'name','family_name']
 
     def __str__(self):
         return self.phone_number
