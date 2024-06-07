@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="422a5d21-310b-40c8-b453-805c985a7bee" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a4a1bbf8-a088-4e8d-ba8e-376481c73733.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a4a1bbf8-a088-4e8d-ba8e-376481c73733/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a4a1bbf8-a088-4e8d-ba8e-376481c73733/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/managers.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/managers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liara.json" beforeDir="false" afterPath="$PROJECT_DIR$/liara.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pasargad/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pasargad/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +145,7 @@
       <workItem from="1717360177110" duration="700000" />
       <workItem from="1717407118271" duration="7945000" />
       <workItem from="1717690055046" duration="12957000" />
-      <workItem from="1717755732160" duration="1945000" />
+      <workItem from="1717755732160" duration="3090000" />
     </task>
     <servers />
   </component>
