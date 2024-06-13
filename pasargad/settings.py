@@ -96,7 +96,8 @@ ROBOTS_USE_SITEMAP = False
 ROBOTS_SITEMAP_URLS = [
     'https://pasargad.ir/sitemap.xml',
 ]
-ROBOTS_SITEMAP_VIEW_NAME = 'cached-sitemap'
+ROBOTS_USE_SCHEME_IN_HOST = True
+
 WSGI_APPLICATION = 'pasargad.wsgi.application'
 
 # Database
