@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'jalali_date',
     'accounts.apps.AccountsConfig',
     'home.apps.HomeConfig',
-    'robots'
+    'robots.apps.RobotsConfig',
+    'django.contrib.sites'
 ]
 
 MIDDLEWARE = [
