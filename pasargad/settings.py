@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_auto_logout',
-    'jalali_date',
+    # 'jalali_date',
     'accounts.apps.AccountsConfig',
     'home.apps.HomeConfig',
     'robots.apps.RobotsConfig',
@@ -56,24 +56,24 @@ MIDDLEWARE = [
 AUTO_LOGOUT = {'IDLE_TIME': timedelta(days=1)}
 ROOT_URLCONF = 'pasargad.urls'
 
-JALALI_DATE_DEFAULTS = {
-    # if change it to true then all dates of the list_display will convert to the Jalali.
-    'LIST_DISPLAY_AUTO_CONVERT': False,
-    'Strftime': {
-        'date': '%y/%m/%d',
-        'datetime': '%H:%M:%S _ %y/%m/%d',
-    },
-    'Static': {
-        'js': [
-            'admin/js/django_jalali.min.js',
-        ],
-        'css': {
-            'all': [
-                'admin/jquery.ui.datepicker.jalali/themes/base/jquery-ui.min.css',
-            ]
-        }
-    },
-}
+# JALALI_DATE_DEFAULTS = {
+#     # if change it to true then all dates of the list_display will convert to the Jalali.
+#     'LIST_DISPLAY_AUTO_CONVERT': False,
+#     'Strftime': {
+#         'date': '%y/%m/%d',
+#         'datetime': '%H:%M:%S _ %y/%m/%d',
+#     },
+#     'Static': {
+#         'js': [
+#             'admin/js/django_jalali.min.js',
+#         ],
+#         'css': {
+#             'all': [
+#                 'admin/jquery.ui.datepicker.jalali/themes/base/jquery-ui.min.css',
+#             ]
+#         }
+#     },
+# }
 
 TEMPLATES = [
     {
