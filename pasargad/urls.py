@@ -22,4 +22,6 @@ from django.urls import path, include
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('', include('home.urls')),
+                  # path('^sitemap.xml$', cache_page(60)(sitemap_view), {'sitemaps': [...]}, name='cached-sitemap'),
+                  path('^robots.txt', include('robots.urls')),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

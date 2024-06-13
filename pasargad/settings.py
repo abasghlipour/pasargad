@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'jalali_date',
     'accounts.apps.AccountsConfig',
     'home.apps.HomeConfig',
+    'robots'
 ]
 
 MIDDLEWARE = [
@@ -85,11 +86,16 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.loaders.app_directories.Loader'
             ],
         },
     },
 ]
-
+ROBOTS_USE_SITEMAP = False
+ROBOTS_SITEMAP_URLS = [
+    'https://pasargad.ir/sitemap.xml',
+]
+ROBOTS_SITEMAP_VIEW_NAME = 'cached-sitemap'
 WSGI_APPLICATION = 'pasargad.wsgi.application'
 
 # Database
@@ -124,7 +130,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTH_USER_MODEL='accounts.User'
+AUTH_USER_MODEL = 'accounts.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/

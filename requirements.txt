@@ -2,6 +2,7 @@ asgiref==3.8.1
 Django==5.0.3
 django-auto-logout==0.5.1
 django-jalali-date==1.1.0
+django-robots==6.1
 jalali_core==1.0.0
 jdatetime==5.0.0
 pillow==10.3.0
