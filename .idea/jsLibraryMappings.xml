@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <excludedPredefinedLibrary name="pasargad/venv/Scripts/node_modules" />
+    <excludedPredefinedLibrary name="pasargad/venv/src/node-v21.7.3-win-x64/node_modules" />
+  </component>
+</project>
