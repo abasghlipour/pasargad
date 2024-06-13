@@ -85,14 +85,24 @@ WSGI_APPLICATION = 'pasargad.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'root',
+#         'PASSWORD': 'iMvT6Wt7jpsfhjIEcn3cELSj',
+#         'HOST': 'kamet.liara.cloud',
+#         'PORT': '34841',
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'root',
         'PASSWORD': 'iMvT6Wt7jpsfhjIEcn3cELSj',
-        'HOST': 'kamet.liara.cloud',
-        'PORT': '34841',
+        'HOST': 'pasargad-pc-db',
+        'PORT': '5432',
     }
 }
 
