@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_auto_logout',
-    # 'jalali_date',
+
     'accounts.apps.AccountsConfig',
     'home.apps.HomeConfig',
     'robots.apps.RobotsConfig',
@@ -55,25 +55,7 @@ MIDDLEWARE = [
 ]
 AUTO_LOGOUT = {'IDLE_TIME': timedelta(days=1)}
 ROOT_URLCONF = 'pasargad.urls'
-
-# JALALI_DATE_DEFAULTS = {
-#     # if change it to true then all dates of the list_display will convert to the Jalali.
-#     'LIST_DISPLAY_AUTO_CONVERT': False,
-#     'Strftime': {
-#         'date': '%y/%m/%d',
-#         'datetime': '%H:%M:%S _ %y/%m/%d',
-#     },
-#     'Static': {
-#         'js': [
-#             'admin/js/django_jalali.min.js',
-#         ],
-#         'css': {
-#             'all': [
-#                 'admin/jquery.ui.datepicker.jalali/themes/base/jquery-ui.min.css',
-#             ]
-#         }
-#     },
-# }
+SITE_ID = 1
 
 TEMPLATES = [
     {
@@ -87,7 +69,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.loaders.app_directories.Loader'
+                # 'django.template.loaders.app_directories.Loader'
             ],
         },
     },
@@ -109,8 +91,8 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'root',
         'PASSWORD': 'iMvT6Wt7jpsfhjIEcn3cELSj',
-        'HOST': 'pasargad-pc-db',
-        'PORT': '5432',
+        'HOST': 'kamet.liara.cloud',
+        'PORT': '34841',
     }
 }
 

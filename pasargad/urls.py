@@ -17,11 +17,11 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('', include('home.urls')),
                   # path('^sitemap.xml$', cache_page(60)(sitemap_view), {'sitemaps': [...]}, name='cached-sitemap'),
-                  path('robots.txt', include('robots.urls')),
+                  re_path(r'^robots\.txt', include('robots.urls')),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
