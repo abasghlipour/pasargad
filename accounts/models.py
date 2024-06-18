@@ -33,3 +33,16 @@ class User(AbstractUser):
 
     def has_module_perms(self, app_label):
         return True
+
+
+class Otp_Code(models.Model):
+    phone_number = models.CharField(max_length=11,unique=True,verbose_name='شماره تلفن')
+    code = models.IntegerField(unique=True)
+    created=models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name='کد احراز هویت'
+        verbose_name_plural = 'کدهای احراز هویت'
+
+    def __str__(self):
+        return f'{self.phone_number} {self.code} {self.created}'
