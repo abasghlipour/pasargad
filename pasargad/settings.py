@@ -36,10 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_auto_logout',
-    'jalali_date',
+
     'accounts.apps.AccountsConfig',
     'home.apps.HomeConfig',
-    # 'iranian_cities'
+    'iranian_cities'
 
 ]
 
@@ -56,24 +56,6 @@ MIDDLEWARE = [
 AUTO_LOGOUT = {'IDLE_TIME': timedelta(days=1)}
 ROOT_URLCONF = 'pasargad.urls'
 
-JALALI_DATE_DEFAULTS = {
-    # if change it to true then all dates of the list_display will convert to the Jalali.
-    'LIST_DISPLAY_AUTO_CONVERT': False,
-    'Strftime': {
-        'date': '%y/%m/%d',
-        'datetime': '%H:%M:%S _ %y/%m/%d',
-    },
-    'Static': {
-        'js': [
-            'admin/js/django_jalali.min.js',
-        ],
-        'css': {
-            'all': [
-                'admin/jquery.ui.datepicker.jalali/themes/base/jquery-ui.min.css',
-            ]
-        }
-    },
-}
 
 TEMPLATES = [
     {
@@ -97,26 +79,26 @@ WSGI_APPLICATION = 'pasargad.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'postgres',
-#         'USER': 'root',
-#         'PASSWORD': 'iMvT6Wt7jpsfhjIEcn3cELSj',
-#         'HOST': 'pasargad-pc-db',
-#         'PORT': '5432',
-#     }
-# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'root',
         'PASSWORD': 'iMvT6Wt7jpsfhjIEcn3cELSj',
-        'HOST': 'kamet.liara.cloud',
-        'PORT': '34841',
+        'HOST': 'pasargad-pc-db',
+        'PORT': '5432',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'root',
+#         'PASSWORD': 'iMvT6Wt7jpsfhjIEcn3cELSj',
+#         'HOST': 'kamet.liara.cloud',
+#         'PORT': '34841',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

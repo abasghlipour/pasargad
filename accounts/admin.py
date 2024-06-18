@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.models import Group
-from .models import User, Otp_Code
+from .models import User, Otp_Code, ProvinceAndCity
 from .forms import UserChangeForm, UserCreationForm
 
 
@@ -32,3 +32,4 @@ class otpCodeAdmin(admin.ModelAdmin):
 
 admin.site.unregister(Group)
 admin.site.register(User, UserAdmin)
+admin.site.register(ProvinceAndCity)
