@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'home.apps.HomeConfig',
     'robots.apps.RobotsConfig',
     'django.contrib.sites'
+    # 'django.contrib.sitemaps'
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -85,26 +87,26 @@ WSGI_APPLICATION = 'pasargad.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'postgres',
-#         'USER': 'root',
-#         'PASSWORD': 'iMvT6Wt7jpsfhjIEcn3cELSj',
-#         'HOST': 'kamet.liara.cloud',
-#         'PORT': '34841',
-#     }
-# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'root',
         'PASSWORD': 'iMvT6Wt7jpsfhjIEcn3cELSj',
-        'HOST': 'pasargad-pc-db',
-        'PORT': '5432',
+        'HOST': 'kamet.liara.cloud',
+        'PORT': '34841',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'postgres',
+#         'USER': 'root',
+#         'PASSWORD': 'iMvT6Wt7jpsfhjIEcn3cELSj',
+#         'HOST': 'pasargad-pc-db',
+#         'PORT': '5432',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
