@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'jalali_date',
     'accounts.apps.AccountsConfig',
     'home.apps.HomeConfig',
-    'iranian_cities'
+    # 'iranian_cities'
 
 ]
 
