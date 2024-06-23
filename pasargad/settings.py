@@ -36,12 +36,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django_auto_logout',
-
     'accounts.apps.AccountsConfig',
     'home.apps.HomeConfig',
     'robots.apps.RobotsConfig',
-    'django.contrib.sites'
-    # 'django.contrib.sitemaps'
+    'django.contrib.sites',
+    'iranian_cities'
+
 ]
 
 
@@ -92,9 +92,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'postgres',
         'USER': 'root',
-        'PASSWORD': 'iMvT6Wt7jpsfhjIEcn3cELSj',
+        'PASSWORD': 'i4a3P0aaKLZlWpqOAI14wa4N',
         'HOST': 'kamet.liara.cloud',
-        'PORT': '34841',
+        'PORT': '34973',
     }
 }
 # DATABASES = {
@@ -105,6 +105,13 @@ DATABASES = {
 #         'PASSWORD': 'iMvT6Wt7jpsfhjIEcn3cELSj',
 #         'HOST': 'pasargad-pc-db',
 #         'PORT': '5432',
+#     }
+# }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#
 #     }
 # }
 

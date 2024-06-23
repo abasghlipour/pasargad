@@ -23,7 +23,6 @@ from django.contrib.sitemaps.views import sitemap
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('', include('home.urls')),
-                  # path('^sitemap.xml$', cache_page(60)(sitemap_view), {'sitemaps': [...]}, name='cached-sitemap'),
                   path('robots.txt', include('robots.urls')),
-                  # path("sitemap.xml", sitemap, name="django.contrib.sitemaps.views.sitemap", )
+                  path('accounts/', include('accounts.urls'))
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
